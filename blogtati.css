@@ -1,11 +1,11 @@
 :root{
     --CORFUNDO-CORPO: #d6cbd3;
-    --CORROSA: #eca1a6;
+    --CORROSA: #d76190fa;
     --CORAZUL:#bdcebe;
     --CORCINZAESCURO:#ada397;
-    <style>
+   
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap');
-</style>
+
 
 
 }
@@ -17,9 +17,7 @@ p{
 body {
     background-image: url(imgs/blog/blue-snow.webp);
 }
-header{
-   
-}
+
 .header-container {
     position: relative;
     text-align: center;
@@ -40,11 +38,9 @@ header{
 
 
 nav {
-    margin: 70px;
-    text-align: center;
-    
-    
-}
+    margin: 50px;
+   
+    }
 
 nav a {
     background-color: rgb(86, 77, 77);
