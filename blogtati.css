@@ -15,12 +15,20 @@ p{
 }
 
 body {
+    margin: auto auto;
     background-image: url(imgs/blog/blue-snow.webp);
+    max-width: 1500px;
+    min-width: 400px;
+    min-height: 100vh;
+    
+
 }
 
 .header-container {
     position: relative;
     text-align: center;
+    
+ 
 }
 
 
@@ -33,13 +41,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 30px;
-   
+ 
 }
 
 
 nav {
     margin: 50px;
-   
+    
     }
 
 nav a {
@@ -48,10 +56,12 @@ nav a {
     border-radius: 5px;
     padding: 15px;
     text-decoration: none;
-    border: 1px solid gray;
+    border: 2px solid gray;
     transition: background-color, color 1s;
     margin-right: 50px;
     font-weight: bold;
+    box-shadow: 0px 0px 10px gray;
+
     
 }
 
@@ -60,9 +70,10 @@ nav a:hover {
     color: black;
 }
 h2{
-    background-color: var(--CORCINZAESCURO);
+    background-image: linear-gradient(to right, var(--CORROSA), var(--CORCINZAESCURO));
     color: white;
     padding: 10px;
+   
    
 }
 body h2:hover{
@@ -88,11 +99,12 @@ body h2:hover{
 }
 
 .casamento img{
-    width: 30%;
-    height: 30%px;
+    width: 350px;
+    height: 270px;
     min-height: 200px;
     display: inline;
     margin: 30px;
+    border-radius: 10px;
 }
 footer{
     background-color: var(--CORCINZAESCURO);
@@ -111,4 +123,8 @@ main{
     margin: 40px auto 70px auto;
     box-shadow: 0px 0px 20px var(--CORCINZAESCURO);
     background-color: whitesmoke;
+    
+}
+
+
 }
