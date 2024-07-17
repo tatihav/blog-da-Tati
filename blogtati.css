@@ -40,8 +40,16 @@ body {
     top: 40px;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 30px;
+    margin: 0px ;
+
+    
  
+}
+.subtitulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--CORCINZAESCURO);
+    margin-top: 0px;
+
 }
 
 
@@ -125,6 +133,5 @@ main{
     background-color: whitesmoke;
     
 }
-
 
 
