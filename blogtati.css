@@ -121,8 +121,14 @@ footer{
     position: fixed;
     bottom: 0px;
     width: 100%;
-   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
+
+   
+
 footer p{
     padding: 5px;
 }
@@ -134,4 +140,30 @@ main{
     
 }
 
+.footer-text{
+    text-align: center;
+    margin: 0 auto;
 
+}
+.footer-text p{
+    margin: 0;
+}
+
+.footer-text address{
+    margin: 0;
+    display: block;
+}
+#btn-inicio{
+    margin-left: 10px;
+    background-color: var(--CORROSA);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 8px 15px;
+ 
+}
+#btn-inicio:hover{
+    box-shadow: 0px 0px 10px white;
+    transform: translateY(-2px);
+}
