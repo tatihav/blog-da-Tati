@@ -12,6 +12,7 @@
 p{
     margin: 0px;
     padding: 15px;
+    text-align: right;
 }
 
 body {
@@ -45,7 +46,7 @@ body {
     
  
 }
-.subtitulo{
+.subtitulo, .{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--CORCINZAESCURO);
     margin-top: 0px;
@@ -77,6 +78,10 @@ nav a:hover {
     background-color: var(--CORROSA);
     color: black;
 }
+.ondeVeio, .trajet, .fazendo, .ondeEsta{
+    display: flex;
+}
+
 h2{
     background-image: linear-gradient(to right, var(--CORROSA), rgba(251, 190, 201, 0.86));
     color: white;
@@ -88,32 +93,29 @@ body h2:hover{
     background-color: var(--CORROSA);
     color: black;
 }
-#familia{
-    width: 30%;
-    border-radius: 10px;
+
+
+
+.carousel-item img {
+  
+  height: 280px;        /* altura desejada */
+  width: 100%;
+  object-fit: contain;  /* mantém proporção, NÃO corta */
+  object-position: center;
+  background: #111;     /* opcional: cor das faixas ao redor */
+  border-radius: 10px;  /* opcional */
+  margin-bottom: 10px;
+}
+.copy-narrow {
+  max-width: 42ch;     /* controle do comprimento das linhas */
+  margin-inline: auto; /* centraliza o bloco de texto */
 }
 
-.fotospamplona img{
-      width: 270px;
-      height: 300px;
-      min-height: 200px;
-      display: inline;
-      margin: 10px;
-      border-radius: 10px;
-}
 .pamplona:hover{
     transform:  scale(1.1) (5deg) translateY(-20px);
   
 }
 
-.casamento img{
-    width: 350px;
-    height: 270px;
-    min-height: 200px;
-    display: inline;
-    margin: 30px;
-    border-radius: 10px;
-}
 footer{
     background-color: var(--CORCINZAESCURO);
     color: white;
@@ -166,4 +168,15 @@ main{
 #btn-inicio:hover{
     box-shadow: 0px 0px 10px white;
     transform: translateY(-2px);
+}
+
+
+
+
+
+
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 220px;
+  }
 }

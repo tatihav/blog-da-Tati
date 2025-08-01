@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="blogtati.css">
     <link rel="stylesheet" href="blogresponsive.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Blog-da-Tati</title>
     <style>
         html {
@@ -13,13 +14,14 @@
     </style>
 </head>
 <body>
-    <header>
+    <header id="inicio">
         <div class="header-container">
             
             <h1 class="header-text">Blog da Tati  </h1>
-            <h1 class="subtitulo" >   Desenvolvedora FrontEnd</h1>
+            <h1 class="subtitulo" >   Desenvolvedora Full Stack</h1>
+            <h5 class="subtitulo">Construo interfaces acessíveis e responsivas. Aqui registro minha jornada, estudos e projetos.</h5>
             <nav>
-                <a href="#inicio">Inicio</a>
+            
                 <a href="#de-onde-veio">De onde Veio</a>
                 <a href="#trajetoria">Trajetória</a>
                 <a href="#onde-foi-parar">Onde foi Parar</a>
@@ -29,67 +31,185 @@
             </nav>
         </div>
     </header>
-    <body>
+    
         <main>
-            <H2 id="inicio" >Início</H2>
-                
-            
-        <H2 id="de-onde-veio" >De onde Veio</H2>
-        <p>
-            Uma cidade no interior de Santa Catarina, chamada Rio do Campo.
-
-        </p>
-        <p>
-            <img id="familia" src="imgs/blog/familia.jpg" alt="fotofamiliarc">
-        </p>    
-     
-        <H2 id="trajetoria" >Trajetória</H2>
-        <p>
-            Aos 18 anos, comecei a trabalhar em uma empresa na cidade de Rio do Sul, Pamplona Alimentos, que passou a ser minha segunda casa. Iniciei como auxiliar de produção na área de industrializados. Com o passar do tempo, fui me destacando e assumindo tarefas mais administrativas. Em 2015, passei a trabalhar no setor de PCP (Planejamento e Controle de Produção). Nessa função, eu lidava com rendimentos de cortes, alterações de cadastros de insumos e também com a programação de compras de insumos para a produção. Foi uma grande paixão. Como ainda não havia muitas ferramentas implantadas para esse controle, criei algumas planilhas em Excel para ajudar no trabalho, que são usadas até hoje pelos atuais colaboradores. Foi uma época de muito aprendizado e desenvolvimento.
-        </p>
-        <p>
-            Em 2019, fui convidada a ocupar uma vaga de programadora de produção de industrializados, um novo desafio. Foi uma experiência ótima, conheci mais a fundo o processo produtivo e aprendi a lidar com pressões de várias áreas.
            
-        </p>
-        <p>
-            No final de 2019, eu tinha um objetivo pessoal, queria trabalhar em um projeto voluntário de forma integral. Então, decidi me dedicar totalmente a esse trabalho, o que me ajudou a ver a vida de forma mais equilibrada. No final de 2021, fui convidada a retornar à empresa Pamplona para assumir novamente a vaga de programadora de compras. Aceitei. Foi ótimo voltar e ver como o que eu tinha desenvolvido ainda estava em uso. Trabalhei um ano nessa vaga e fui chamada para ser a líder do setor. Outra experiência espetacular, na qual pude conhecer melhor meus colegas e liderados, ajudando-os a se desenvolver profissionalmente. Ganhamos um troféu em uma etapa de um torneio de gestão realizado na empresa. Foi incrível.
-            
-        </p>
-        <p>
-            Nesse período, em meados de 2022, conheci uma pessoa muito especial que hoje é meu esposo. No entanto, ele morava em outro estado, o que afetaria meu trabalho atual. Decidimos que eu me mudaria após o casamento para morar com ele do outro lado do país.
-        </p>
-              
 
-        </p>
-            <div class="fotospamplona">
-                <img id="pamp1" class="pamplona" src="imgs/blog/pamplona1.jpg" alt="fotopamplona">
-                <img id="pamp2"  class="pamplona" src="imgs/blog/pamplona2.jpg" alt="pamplona2">
-                <img id="pamp3" class="pamplona" src="imgs/blog/trofeu.jpg" alt="trofeu">
-                <img id="pamp4" class="pamplona"  src="imgs/blog/pamplona4.jpg" alt="pamplona3">
-
-             </div>
-        <H2 id="onde-foi-parar" > Onde foi Parar</H2>
-        <p>
-            Em Janeiro de 2024 eu sai então da empresa para me organizar para o meu casamento e minha mudança. 
-        Eu e o Alisson nos casamos em 23/02/2024 e logo após me mudei para Fortaleza no Ceará, Saí do interior de Santa Catarina para a capital do Ceará. 
-        uma grande mudança em minha vida em todos os sentidos. Mas com certeza uma mudança para melhor. Estou muito feliz em estar aqui do lado do meu amor.
-        <br> Nesse momento também comecei uma migração de carreira. 
-        
-        </p>
-        <p>
-            <div class="casamento">
-            <img src="imgs/casamento/IMG_9152.jpg" alt="casamento">
+ <!-- DE ONDE VEIO -->
+  <h2 id="de-onde-veio">De onde Veio</h2>
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <!-- carrossel -->
+      <div class="col-md-6">
+        <div id="carouselDeOndeVeio" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselDeOndeVeio" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselDeOndeVeio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imgs/blog/familia.jpg" class="d-block w-100" alt="Família">
+              <div class="carousel-caption d-none d-md-block"><h3>Minha Família</h3></div>
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/blog/familia2.jpg" class="d-block w-100" alt="Momentos em família">
+              <div class="carousel-caption d-none d-md-block"><h3>Família</h3></div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselDeOndeVeio" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselDeOndeVeio" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Próximo</span>
+          </button>
         </div>
+      </div>
+      <!-- texto -->
+      <div class="col-md-6">
+        <p class="copy-narrow">
+          Nasci no interior de Santa Catarina, em Rio do Campo. Cresci cercada por família, trabalho
+          e uma vontade constante de aprender. Essas raízes moldaram meu jeito de ser e sigo levando
+          dedicação e persistência em tudo o que faço.
         </p>
-        <H2 id="o-que-esta-fazendo" >O que está Fazendo</H2>
-        <p>
-            em Março de 2024 Comecei meus estudos na PUC Minas Virtual, graduação de Tecnólogo em sistemas para internet.
-           
+      </div>
+    </div>
+  </div>
+
+  <!-- TRAJETÓRIA -->
+  <h2 id="trajetoria">Trajetória</h2>
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <!-- carrossel -->
+      <div class="col-md-6 order-md-1">
+        <div id="carouselTrajetoria" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselTrajetoria" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselTrajetoria" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselTrajetoria" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imgs/blog/pamplona1.jpg" class="d-block w-100" alt="Início na Pamplona">
+              <div class="carousel-caption d-none d-md-block"><h3>Início na Pamplona</h3></div>
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/blog/pamplona2.jpg" class="d-block w-100" alt="Atuação em PCP">
+              <div class="carousel-caption d-none d-md-block"><h3>PCP</h3></div>
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/blog/trofeu.jpg" class="d-block w-100" alt="Conquistas na liderança">
+              <div class="carousel-caption d-none d-md-block"><h3>Conquistas na liderança</h3></div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselTrajetoria" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselTrajetoria" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+      <!-- texto -->
+      <div class="col-md-6">
+        <p class="copy-narrow">
+          Comecei na Pamplona Alimentos, onde passei por produção, PCP e liderança de almoxarifado.
+          Nesse período, desenvolvi planilhas e processos que continuam ajudando a equipe até hoje.
+          Foi lá que aprendi a resolver problemas com método, disciplina e colaboração.
         </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ONDE FOI PARAR -->
+  <h2 id="onde-foi-parar">Onde foi Parar</h2>
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <!-- carrossel -->
+      <div class="col-md-6">
+        <div id="carouselOndeFoiParar" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselOndeFoiParar" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselOndeFoiParar" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imgs/casamento/IMG_9152.jpg" class="d-block w-100" alt="Nosso casamento">
+              <div class="carousel-caption d-none d-md-block"><h3>Nosso casamento</h3></div>
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/blog/fortaleza.jpg" class="d-block w-100" alt="Chegada a Fortaleza">
+              <div class="carousel-caption d-none d-md-block"><h3>Chegada a Fortaleza</h3></div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselOndeFoiParar" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselOndeFoiParar" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+      <!-- texto -->
+      <div class="col-md-6">
+        <p class="copy-narrow">
+          Casei e mudei para Fortaleza (CE), iniciando um novo ciclo. Em uma cidade cheia de oportunidades,
+          tracei um plano claro: migrar para a área de tecnologia e construir minha carreira nesse setor.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+<!-- O QUE ESTÁ FAZENDO -->
+<h2 id="o-que-esta-fazendo">O que está Fazendo</h2>
+<div class="container">
+  <div class="row align-items-center g-4 fazendo">
+    <!-- Coluna do carrossel -->
+    <div class="col-md-6 order-md-1">
+      <div id="carouselOQueFaz" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselOQueFaz" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselOQueFaz" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imgs/blog/estudos.jpg" class="d-block w-100" alt="Estudos na PUC Minas">
+            <div class="carousel-caption d-none d-md-block"><h3>PUC Minas – Sistemas p/ Internet</h3></div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/blog/frontend.jpg" class="d-block w-100" alt="Desenvolvimento Front-end">
+            <div class="carousel-caption d-none d-md-block"><h3>Desenvolvimento Front-end</h3></div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselOQueFaz" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselOQueFaz" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Coluna do texto -->
+    <div class="col-md-6">
+      <p class="copy-narrow">
+        Hoje curso Sistemas para Internet na PUC Minas e direciono meus estudos para desenvolvimento web.
+        Já trabalho com HTML, CSS, JavaScript, React, C#, ASP.NET MVC e bancos de dados SQL Server e PostgreSQL.
+        Também utilizo GitHub para versionamento e Kanban para organizar meus projetos. Estou construindo aplicações reais
+        e evoluindo a cada sprint.
+      </p>
+    </div>
+  </div>
+</div>
+
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 <footer>
     
-    <button id="btn-inicio">Voltar ao Início</button>
+   <a href="#inicio" style="text-decoration:none">
+  <button id="btn-inicio">Voltar ao Início</button>
+</a>
     <div class="footer-text">
     <p>
     Desenvolvido por Tatiana Haveroth Barbosa </p>
