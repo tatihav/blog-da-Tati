@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -86,6 +86,7 @@
             <button type="button" data-bs-target="#carouselTrajetoria" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselTrajetoria" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselTrajetoria" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselTrajetoria" data-bs-slide-to="3" aria-label="Slide 4"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -93,12 +94,16 @@
               <div class="carousel-caption d-none d-md-block"><h3>Início na Pamplona</h3></div>
             </div>
             <div class="carousel-item">
-              <img src="imgs/blog/pamplona2.jpg" class="d-block w-100" alt="Atuação em PCP">
+              <img src="imgs/blog/pamplona2.jpg" class="d-block w-100" alt="Atuação em PCP" loading="lazy">
               <div class="carousel-caption d-none d-md-block"><h3>PCP</h3></div>
             </div>
             <div class="carousel-item">
-              <img src="imgs/blog/trofeu.jpg" class="d-block w-100" alt="Conquistas na liderança">
+              <img src="imgs/blog/trofeu.jpg" class="d-block w-100" alt="Conquistas na liderança" loading="lazy">
               <div class="carousel-caption d-none d-md-block"><h3>Conquistas na liderança</h3></div>
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/blog/pamplona3.jpg" class="d-block w-100" alt="Conquistas na liderança" loading="lazy">
+              <div class="carousel-caption d-none d-md-block"><h3>Equipe Almoxarifado</h3></div>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselTrajetoria" data-bs-slide="prev">
@@ -130,6 +135,8 @@
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselOndeFoiParar" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselOndeFoiParar" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselOndeFoiParar" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselOndeFoiParar" data-bs-slide-to="3" aria-label="Slide 4"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -137,9 +144,19 @@
               <div class="carousel-caption d-none d-md-block"><h3>Nosso casamento</h3></div>
             </div>
             <div class="carousel-item">
-              <img src="imgs/blog/fortaleza.jpg" class="d-block w-100" alt="Chegada a Fortaleza">
-              <div class="carousel-caption d-none d-md-block"><h3>Chegada a Fortaleza</h3></div>
+              <img src="imgs/blog/familia3.jpg" class="d-block w-100" alt="Chegada a Fortaleza" loading="lazy">
+              <div class="carousel-caption d-none d-md-block"><h3>Uma nova Família</h3></div>
             </div>
+                 <div class="carousel-item">
+              <img src="imgs/blog/Interior.jpg" class="d-block w-100" alt="Chegada a Fortaleza" loading="lazy">
+              <div class="carousel-caption d-none d-md-block"><h3>Interior do Ceará</h3></div>
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/blog/praia.jpg" class="d-block w-100" alt="Chegada a Fortaleza" loading="lazy">
+              <div class="carousel-caption d-none d-md-block"><h3>Praia mais Linda</h3></div>
+            </div>
+            
+
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselOndeFoiParar" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span>
@@ -170,17 +187,38 @@
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselOQueFaz" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselOQueFaz" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselOQueFaz" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+
         <div class="carousel-inner">
+          <!-- Slide 1 (foto) -->
           <div class="carousel-item active">
             <img src="imgs/blog/estudos.jpg" class="d-block w-100" alt="Estudos na PUC Minas">
             <div class="carousel-caption d-none d-md-block"><h3>PUC Minas – Sistemas p/ Internet</h3></div>
           </div>
+
+          <!-- Slide 2 (foto) -->
           <div class="carousel-item">
-            <img src="imgs/blog/frontend.jpg" class="d-block w-100" alt="Desenvolvimento Front-end">
+            <img src="imgs/blog/ProjetoAlisson.png" class="d-block w-100" alt="Desenvolvimento Front-end" loading="lazy">
             <div class="carousel-caption d-none d-md-block"><h3>Desenvolvimento Front-end</h3></div>
           </div>
+
+          <!-- Slide 3 (vídeo) -->
+          <div class="carousel-item">
+            <video
+              id="videoDemo"
+              class="d-block w-100"
+              src="imgs/blog/sabordomomento.mp4"
+              muted
+              playsinline
+              autoplay
+              loop
+              controls
+            ></video>
+            <div class="carousel-caption d-none d-md-block"><h3>Demo do projeto</h3></div>
+          </div>
         </div>
+
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselOQueFaz" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span>
         </button>
@@ -218,6 +256,10 @@
    
     </div>
 </footer>
-        <script src="blogtati.js"></script>
+        
+
+
+
 </body>
 </html>
+
